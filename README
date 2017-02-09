@@ -1,0 +1,76 @@
+###############OFF-AXIS GRB MODEL#############################
+
+off-axis GRB models taken from the online repository
+by van Eerten http://cosmo.nyu.edu/afterglowlibrary/index.html
+
+LONG GRB
+broadbandnu1.00e14obs0d30.txt
+broadbandnu1.00e14obs0d60.txt
+
+Off-axis models that are good to represent the case of a long bright
+GRB: dataset ''broad-band long GRBs in ISM'', which corresponds to a
+GRB of jet energy 2e51 erg, expanding in a uniform ISM medium of
+density 1 cm^-3, select a frequency of 1e14 Hz (the closest to the
+R-band central frequency among the ones available in this repository),
+and an off-axis observer angle of 0.30 rad and 0.60 rad. The simulated
+dataset has an assumed GRB opening angle of 0.2 rad.  The dataset
+gives time in day, and fluxes in mJy at a distance of 1e28 cm.
+
+LONG LOW-LUMINOSITY GRB (or BRIGHT SHORT GRB)  
+
+sgrbEjets1e50n1thetajet0d2opticaltheta0d40.txt
+sgrbEjets1e50n1thetajet0d2opticaltheta0d80.txt
+
+Off-axis models that is good to represent the case of a long
+low-luminosity GRB: dataset ''broad-band and off-axis low-energy
+GRBs'', which select select a GRB of jet energy 1e50 erg, a uniform
+ISM medium of density 1 cm^-3, a jet angle of 0.2rad, a frequency of
+4.56e14 Hz (for R-band), and an off-axis observer's angle of 0.40 rad
+and 0.80 rad.  The dataset gives time in day, and fluxes in mJy at a
+distance of 1e28 cm.
+
+SHORT GRB 
+sgrbEjets1e50n1e-3thetajet0d2opticaltheta0d40.txt
+sgrbEjets1e50n1e-3thetajet0d2opticaltheta0d80.txt
+
+Off-axis models that is good to represent the case of a short GRB:
+dataset ''broad-band and off-axis low-energy GRBs'' in the online
+repository select a GRB of jet energy 1e50 erg, select a uniform ISM
+medium of density 1e-3 cm^-3, select a frequency of 4.56e14 Hz (for
+R-band), a jet angle of 0.2 rad, and an off-axis observer's angle of
+0.40 rad and 0.8 rad. The dataset gives time in day, anf fluxes in mJy
+at a distance of 1e28 cm.
+
+130603B_2thj_r.txt
+130603B_4thj_rSDSS.txt
+
+Off-axis models which use the intrinsic estimated properties of the 
+on-axis GRB 130603B (Stratta et al. in prep) for an obsever angle twice
+the beaming angle and 4 times the beaming angle.
+
+###############KILONOVA MODEL##########################
+BB_R_1e-2.dat
+Fe_R_1e-2.dat
+
+The kilonova models by Metzger et al. 2010, BB_R_1e-2.dat assumes a blackbody emission and an ejecta mass 10^-2Mo and outflow speed v= 0.1c. Fe_R_1e-2.dat thermalization efficiency = 1, iron opacity. 
+
+NS14_14.txt 
+BH14_NS14.txt 
+
+The kilonova models by Piran et al. 2013 
+Approximation that all the bolometric luminosity goes in R band assuming a NS-NS merger with NS=1.4Mo and BH-NS merger with NS=1.4Mo and BH mass of 10Mo. 
+Barnes & Kasen (2013), assuming low velocity 0.1 c and low mass 10^-3Mo ejecta. 
+
+lv_l.dat
+Barnes & Kasen (2013), for the case of low-velocity (0.1 c) and low-mass (M = 10^-3 Mo) ejecta, lanthanides opacity
+
+Kasen15_t0.dat
+Kilonova model by Kasen, Fernandez & Metzger 2015 (r band). In the file day, nu L_nu / 1e40  erg/s, model which considers that the BNS directly collapses in a BH
+
+%Kasen15_t100.dat
+%kilonova model by Kasen, Fernandez & Metzger 2015 (r band). In the file day, nu L_nu / %1e40  erg/s, model which considers that the BNS gives rise to an hypermassive NS which %survives for 100 ms before collapsing into a BH
+
+Kasen15_tinf.dat 
+kilonova model by Kasen, Fernandez & Metzger 2015 (r band). In the file day, nu L_nu / 1e40  erg/s, model which considers that the BNS gives rise to a NS surviving for t=inf  
+
+

@@ -1,0 +1,117 @@
+#######################################################
+#              BOX-FIT. Version 0.2 
+# Last modified: June 13, 2012, by HJvE 
+#
+# reference: "Gamma-ray burst afterglow broadband 
+#   fitting based directly on hydrodynamics simulations"
+#   H.J. van Eerten, A.J. van der Horst, A.I. MacFadyen
+#   ApJ (2012) Issue 749, Page 44
+#   ArXiv: 1110.5089
+#
+# Development of the Boxfit code was supported in part 
+# by NASA through grant NNX10AF62G issued through the 
+# Astrophysics Theory Program and by the NSF through 
+# grant AST-1009863.
+#######################################################
+# I/O settings:
+#   using parameter file 130603B/boxfitsettings.txt
+#   path to BOX files: ../data/
+#   dataset file name: ../data/grb130603Bdata.txt
+#####################################################
+# radiation switches
+#   synchrotron self-absorption is enabled
+#   electron cooling is enabled
+#   box data is included
+#   Blandford-McKee analytical data is included
+#####################################################
+# Fit variable settings:
+#   theta_0 = 9.400000e-02 (rad), between 4.500000e-02 and 5.000000e-01. Thawed.
+#   E_iso = 1.500000e+51 (erg), between 1.000000e+47 and 1.000000e+56. Thawed.
+#   n_0 = 1.300000e-01 cm^-3, between 1.000000e-05 and 1.000000e+05. Thawed.
+#   theta_obs = 3.760000e-01 (rad), between 0.000000e+00 and 1.570000e+00. Frozen.
+#   p = 2.700000e+00, between 2.000000e+00 and 3.000000e+00. Frozen.
+#   epsilon_B = 1.000000e-01, between 1.000000e-05 and 1.000000e+00. Thawed.
+#   epsilon_E = 1.000000e-01, between 1.000000e-05 and 1.000000e+00. Thawed.
+#   ksi_N = 1.000000e+00, between 1.000000e-05 and 1.000000e+00. Frozen.
+#####################################################
+# Time and frequency settings
+#   nu_0 = 4.766200e+14 (Hz), nu_1 = 4.766200e+14 (Hz)
+#   t_0 = 9.999936e-02 (days), t_1 = 9.999936e+03 (days)
+#####################################################
+# Observer distance settings
+#   luminosity distance: 5.907000e+27 (cm)
+#   redshift: 3.564000e-01
+#####################################################
+# BOX data:
+#   number of boxes: 19
+#   box 0 : theta_0 = 4.500000e-02
+#   box 1 : theta_0 = 5.000000e-02
+#   box 2 : theta_0 = 7.500000e-02
+#   box 3 : theta_0 = 1.000000e-01
+#   box 4 : theta_0 = 1.250000e-01
+#   box 5 : theta_0 = 1.500000e-01
+#   box 6 : theta_0 = 1.750000e-01
+#   box 7 : theta_0 = 2.000000e-01
+#   box 8 : theta_0 = 2.250000e-01
+#   box 9 : theta_0 = 2.500000e-01
+#   box 10 : theta_0 = 2.750000e-01
+#   box 11 : theta_0 = 3.000000e-01
+#   box 12 : theta_0 = 3.250000e-01
+#   box 13 : theta_0 = 3.500000e-01
+#   box 14 : theta_0 = 3.750000e-01
+#   box 15 : theta_0 = 4.000000e-01
+#   box 16 : theta_0 = 4.250000e-01
+#   box 17 : theta_0 = 4.500000e-01
+#   box 18 : theta_0 = 5.000000e-01
+#####################################################
+# Resolution settings:
+#   BM number of snapshots BM_res = 1000
+#   Box number of steps box_res = 1500
+#   EDS resolution: phi cells = 16, r cells = 768
+#   Starting temperature annealing: 1.000000e+05
+#   Number of iterations at single temperature: 100
+#   Fraction drop in temperature per cycle: 9.900000e-01
+#   Lowest nonzero annealing temperature: 1.000000e-02
+#   number of Monte Carlo light curves calculated: 10000
+#   Starting Blandford-McKee fluid Lorentz factor: 2.000000e+02
+#   Stopping Blandford-McKee fluid Lorentz factor: 2.500000e+01
+#   (Box start Lorentz factor = 2.500000e+01)
+# BM initial: R = 4.018603e+16 (cm), t_obs = 2.424145e-05 (days)
+# BM final: R = 1.607283e+17 (cm), t_obs = 6.205812e-03 (days)
+#####################################################
+# i, t (days), nu (Hz), F (mJy)
+0, 9.999936e-02, 4.766200e+14, 0.000000e+00
+1, 1.402995e-01, 4.766200e+14, 0.000000e+00
+2, 1.968407e-01, 4.766200e+14, 0.000000e+00
+3, 2.761682e-01, 4.766200e+14, 0.000000e+00
+4, 3.874650e-01, 4.766200e+14, 0.000000e+00
+5, 5.436149e-01, 4.766200e+14, 0.000000e+00
+6, 7.626937e-01, 4.766200e+14, 0.000000e+00
+7, 1.070062e+00, 4.766200e+14, 2.099143e-08
+8, 1.501301e+00, 4.766200e+14, 6.755953e-08
+9, 2.106331e+00, 4.766200e+14, 2.634047e-07
+10, 2.955190e+00, 4.766200e+14, 7.217647e-07
+11, 4.146143e+00, 4.766200e+14, 2.400705e-06
+12, 5.817054e+00, 4.766200e+14, 6.511836e-06
+13, 8.161349e+00, 4.766200e+14, 9.028404e-06
+14, 1.145040e+01, 4.766200e+14, 7.683852e-06
+15, 1.606496e+01, 4.766200e+14, 4.657360e-06
+16, 2.253919e+01, 4.766200e+14, 1.831403e-06
+17, 3.162257e+01, 4.766200e+14, 4.578886e-07
+18, 4.436659e+01, 4.766200e+14, 8.780684e-08
+19, 6.224649e+01, 4.766200e+14, 1.911380e-08
+20, 8.733206e+01, 4.766200e+14, 5.132661e-09
+21, 1.225272e+02, 4.766200e+14, 1.685359e-09
+22, 1.719061e+02, 4.766200e+14, 6.516662e-10
+23, 2.411849e+02, 4.766200e+14, 2.773047e-10
+24, 3.383833e+02, 4.766200e+14, 1.794403e-10
+25, 4.747531e+02, 4.766200e+14, 2.063567e-10
+26, 6.660804e+02, 4.766200e+14, 2.580620e-10
+27, 9.345132e+02, 4.766200e+14, 2.043896e-10
+28, 1.311126e+03, 4.766200e+14, 5.875351e-11
+29, 1.839514e+03, 4.766200e+14, 1.859583e-11
+30, 2.580845e+03, 4.766200e+14, 7.977176e-12
+31, 3.620935e+03, 4.766200e+14, 3.995985e-12
+32, 5.080186e+03, 4.766200e+14, 0.000000e+00
+33, 7.127519e+03, 4.766200e+14, 0.000000e+00
+34, 9.999936e+03, 4.766200e+14, 0.000000e+00
